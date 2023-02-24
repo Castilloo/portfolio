@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Special+Elite&family=Sunflower&family=UnifrakturMaguntia&family=VT323&display=swap');
+
+$ff-0: 'UnifrakturMaguntia';
+$ff-1: 'Special Elite', cursive; 
+$ff-2: 'Courier Prime', monospace;
+$ff-3: 'Sunflower', sans-serif;
+$ff-4: 'VT323', monospace;
+
+$purple: #706fd3;
+$black: #1e272e;
+$white: #f1f2f6;
+$gray: #a5b1c2;
+$blackberry: #2c2c54;
+$blue: #182C61;
+
+@mixin since ($size) {
+    @media screen and (min-width: $size) {
+        @content;
+    }
+}
+
