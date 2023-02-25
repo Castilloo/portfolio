@@ -36,12 +36,11 @@ export default {
   },
   created() {
     window.addEventListener('resize', this.checkScreen);
-    this.checkScreen;
+    this.checkScreen();
   },
   methods: {
     toggleOptions() {
       this.optionsActived = !this.optionsActived;
-      if ()
     },
     checkScreen() {
       this.windowWidth = window.innerWidth;
@@ -64,6 +63,7 @@ export default {
     &__options {
       background-color: $blackberry;
       width: 100%;
+      height: 100%;
       display: flex;
       justify-content: center;
       position: fixed;
@@ -75,11 +75,16 @@ export default {
         list-style: none;
         min-width: 200px;
         &__item {
-        margin: 20px 0;
+          margin: 20px 0;
           font-family: $ff-2;
           text-align: center;
           padding: 10px;
           color: $white;
+          font-size: 16px;
+          font-weight: bolder;
+          &:hover {
+          color: $purple;
+        }
         }
       }
     }
@@ -92,11 +97,11 @@ export default {
       display: flex;
       align-items: center;
       &__bars {
+        font-size: 20px;
         &:hover {
           color: $purple;
         }
         & fa .fa-bars{
-          font-size: 30px;
           padding: 5px;
         }
         @include since (600px) {
@@ -118,7 +123,8 @@ export default {
         }
         &__item {
           font-family: $ff-2;
-          font-size: 13px;
+          font-size: 16px;
+          font-weight: bolder;
           // border: 1px solid wheat;
           padding: 10px;
           &:hover {
