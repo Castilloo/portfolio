@@ -18,11 +18,11 @@
 <style lang="scss" scoped>
     .presentation {
         width: 100%;
-        height: 300px;
-        background: $black;
+        height: fit-content;
         color: $gray;
         font-family: $ff-3;
         padding: 2em 3em;
+        min-width: 300px;
         text-justify:distribute-all-lines;
         &__hello {
             font-size: 1.1em;

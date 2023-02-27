@@ -93,7 +93,7 @@ export default {
       max-width: 960px;
       display: flex;
       justify-content: space-between;
-      color: $white;
+      color: $gray;
       display: flex;
       align-items: center;
       &__bars {
@@ -110,8 +110,9 @@ export default {
       }
       &__logo {
         font-family: $ff-0;
-        font-size: 25px;
+        font-size: 30px;
         margin-left: 10px;
+        color: $white;
       }
       &__items {
         // border: 1px solid wheat;
@@ -128,7 +129,7 @@ export default {
           // border: 1px solid wheat;
           padding: 10px;
           &:hover {
-            color: $purple;
+            color: $white;
           } 
         }
       }
