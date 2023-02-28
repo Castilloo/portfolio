@@ -1,6 +1,13 @@
 <template>
-    <div class="Stacks">
-        
+    <div class="stacks">
+        <div class="stacks__carrousel">
+            <img src="../assets/logo.png"/>
+            <img src="../assets/logo.png"/>
+        </div>
+        <ul>
+            <li class="point"></li>
+            <li class="point"></li>
+        </ul>
     </div>
 </template>
 
